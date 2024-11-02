@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.container {
+    text-align: center;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 15px 20px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+}
+
+.custom-file-upload:hover {
+    background-color: rgb(67, 59, 59);
+    color: white;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+#copyButton {
+    display: inline-block;
+    padding: 16.5px 20px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+}
+
+.tree {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+.tree ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 30px;
+}
+
+.tree li {
+    padding: 4px 0;
+    position: relative;
+    padding-bottom: 7px;
+}
+
+.tree li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 1px;
+    height: calc(100% + 8px);
+    border-left: 1px solid #000;
+}
+
+.tree li::after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: -50px;
+    width: 20px;
+    height: 1px;
+    border-bottom: 1px solid #000;
+}
+
+.tree li:last-child::before {
+    height: 12px;
+}
+
+#folderInput {
+    font-size: 1.2em;
+}
+
+li.folder::before {
+    content: "📁 ";
+    padding-left: 20px;
+}
+
+li.file::before {
+    content: "📄 ";
+    padding-left: 20px;
+}
